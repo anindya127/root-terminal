@@ -16,7 +16,9 @@
 #include <ArduinoJson.h>
 #include <driver/i2s.h>
 #include <math.h>
-#include <TFT_eSPI.h>
+#include <SPI.h>
+#include <Adafruit_GFX.h>
+#include <Adafruit_ST7789.h>
 
 #define MIC_WS    4
 #define MIC_SCK   5
@@ -36,7 +38,8 @@ static int VOLUME_PERCENT = 1;
 // Jitter cushion: start speaking only once this much audio is queued.
 static const size_t PREBUFFER_BYTES = 8192;
 
-TFT_eSPI tft;
+SPIClass lcdSPI(FSPI);
+Adafruit_ST7789 tft(&lcdSPI, 40 /*DC*/, 45 /*RST*/, -1 /*no CS*/);
 WiFiClient sock;
 bool connectedOnce = false;
 unsigned long lastHello = 0;
@@ -45,18 +48,24 @@ String stateLine = "boot";
 
 // ---------------------------------------------------------------- screen ----
 
+void centre(const String &txt, int y, uint8_t size, uint16_t colour) {
+  tft.setTextSize(size);
+  tft.setTextColor(colour, ST77XX_BLACK);
+  int16_t x1, y1;
+  uint16_t w, h;
+  tft.getTextBounds(txt, 0, 0, &x1, &y1, &w, &h);
+  tft.setCursor((240 - (int)w) / 2, y);
+  tft.print(txt);
+}
+
 void screen(const char *state, const String &detail = "") {
   stateLine = state;
-  tft.fillScreen(TFT_BLACK);
-  tft.setTextColor(TFT_WHITE, TFT_BLACK);
-  tft.setTextDatum(MC_DATUM);
-  tft.drawString("ROOT", 120, 92, 4);
-  tft.drawFastHLine(70, 112, 100, TFT_DARKGREY);
-  tft.setTextColor(TFT_LIGHTGREY, TFT_BLACK);
-  tft.drawString(state, 120, 138, 2);
-  if (detail.length()) tft.drawString(detail, 120, 160, 2);
-  tft.setTextColor(TFT_DARKGREY, TFT_BLACK);
-  tft.drawString("v2", 120, 224, 1);
+  tft.fillScreen(ST77XX_BLACK);
+  centre("ROOT", 70, 4, ST77XX_WHITE);
+  tft.drawFastHLine(70, 112, 100, 0x4208);
+  centre(state, 130, 2, 0xCE79);
+  if (detail.length()) centre(detail, 156, 1, 0x8410);
+  centre("v2", 220, 1, 0x4208);
 }
 
 // ----------------------------------------------------------------- audio ----
@@ -136,12 +145,9 @@ void handleLine(const String &line) {
     if (got) playFrame(frame, got);
     char buf[24];
     snprintf(buf, sizeof(buf), "%lu frames", (unsigned long)framesPlayed);
-    tft.fillRect(0, 148, 240, 20, TFT_BLACK);
-    tft.setTextColor(TFT_LIGHTGREY, TFT_BLACK);
-    tft.setTextDatum(MC_DATUM);
-    tft.drawString("speaking", 120, 138, 2);
-    tft.setTextColor(TFT_DARKGREY, TFT_BLACK);
-    tft.drawString(buf, 120, 160, 2);
+    tft.fillRect(0, 126, 240, 46, ST77XX_BLACK);
+    centre("speaking", 130, 2, 0xCE79);
+    centre(buf, 158, 1, 0x8410);
   } else if (!strcmp(type, "welcome")) {
     screen("online", WiFi.localIP().toString());
   }
@@ -155,13 +161,26 @@ void setup() {
   Serial.println("\n=== ROOT terminal v2 ===");
   Serial.println("ref: xiaozhi-esp32 bread-compact-wifi-lcd");
 
+  Serial.println("s1: backlight");
   pinMode(LCD_BL, OUTPUT);
   digitalWrite(LCD_BL, HIGH);
-  tft.init();
+  delay(50);
+
+  Serial.println("s2: spi bus (MOSI 47, CLK 21)");
+  lcdSPI.begin(21 /*SCLK*/, -1 /*MISO*/, 47 /*MOSI*/, -1 /*SS*/);
+
+  Serial.println("s3: tft.init(240,240)");
+  tft.init(240, 240, SPI_MODE0);
+  tft.setSPISpeed(40000000);
+
+  Serial.println("s4: rotation + clear");
   tft.setRotation(0);
-  tft.fillScreen(TFT_BLACK);
+  tft.fillScreen(ST77XX_BLACK);
+
+  Serial.println("s5: first draw");
+  tft.setTextWrap(false);
   screen("booting");
-  Serial.println("lcd: st7789 240x240 initialised");
+  Serial.println("s6: lcd up");
 
   setupSpeaker();
 

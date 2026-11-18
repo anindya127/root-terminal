@@ -20,6 +20,10 @@ PIPER = os.path.expanduser("~/.local/bin/piper")
 VOICE = os.path.expanduser("~/piper-voices/en_US-lessac-medium.onnx")
 FFMPEG = os.path.expanduser("~/.hermes/tools/ffmpeg-9.0.1-linux-x64/bin/ffmpeg")
 GREETING = "Hello sir. This is Root, speaking from your desk."
+# The board reconnects every time its TCP session drops, and each reconnect used to
+# replay the greeting: 49 connects produced 47 greetings overnight, which is exactly
+# the "echo" that was heard. Greet once per server run, never again.
+GREET_ONCE = {"done": False}
 
 logging.basicConfig(
     level=logging.INFO,
@@ -63,7 +67,11 @@ async def handle(reader, writer):
             if msg.get("type") == "hello":
                 await send(writer, {"type": "welcome", "text": "root here"})
                 # speak once per connection so the user hears the link working
+                if GREET_ONCE["done"]:
+                    await send(writer, {"type": "welcome", "text": "quiet"})
+                    continue
                 try:
+                    GREET_ONCE["done"] = True
                     pcm = await asyncio.get_running_loop().run_in_executor(None, synth_pcm, GREETING)
                     log.info("sending speech: %d pcm bytes", len(pcm))
                     await send_audio(writer, pcm)
