@@ -1434,3 +1434,640 @@ ConnectionResetError: [Errno 104] Connection reset by peer
 2026-11-20 18:07:36,708 INFO queued speech id=6 (60602 wav bytes): Stability check after four minutes.
 2026-11-20 18:07:39,429 INFO job poll from 223.73.242.129
 2026-11-20 18:07:41,299 INFO served audio 6 (60602 bytes)
+2026-11-20 18:07:57,899 INFO job poll from 223.73.242.129
+2026-11-20 18:07:59,041 INFO job poll from 223.73.242.129
+2026-11-20 18:08:00,331 INFO job poll from 223.73.242.129
+2026-11-20 18:08:01,573 INFO job poll from 223.73.242.129
+2026-11-20 18:08:03,654 INFO job poll from 223.73.242.129
+2026-11-20 18:08:04,882 INFO job poll from 223.73.242.129
+2026-11-20 18:08:07,948 INFO job poll from 223.73.242.129
+2026-11-20 18:08:09,538 INFO job poll from 223.73.242.129
+2026-11-20 18:08:12,911 INFO job poll from 223.73.242.129
+2026-11-20 18:08:14,748 INFO job poll from 223.73.242.129
+2026-11-20 18:08:17,511 INFO job poll from 223.73.242.129
+2026-11-20 18:08:19,295 INFO job poll from 223.73.242.129
+2026-11-20 18:08:20,522 INFO job poll from 223.73.242.129
+2026-11-20 18:08:21,752 INFO job poll from 223.73.242.129
+2026-11-20 18:08:23,009 INFO job poll from 223.73.242.129
+2026-11-20 18:08:24,261 INFO job poll from 223.73.242.129
+2026-11-20 18:08:25,512 INFO job poll from 223.73.242.129
+2026-11-20 18:08:29,196 INFO job poll from 223.73.242.129
+2026-11-20 18:08:33,758 INFO job poll from 223.73.242.129
+2026-11-20 18:08:35,972 INFO job poll from 223.73.242.129
+2026-11-20 18:08:37,200 INFO job poll from 223.73.242.129
+2026-11-20 18:08:39,028 INFO job poll from 223.73.242.129
+2026-11-20 18:08:41,806 INFO job poll from 223.73.242.129
+2026-11-20 18:08:47,863 INFO job poll from 223.73.242.129
+2026-11-20 18:08:49,097 INFO job poll from 223.73.242.129
+2026-11-20 18:08:50,343 INFO job poll from 223.73.242.129
+2026-11-20 18:08:51,580 INFO job poll from 223.73.242.129
+2026-11-20 18:08:52,800 INFO job poll from 223.73.242.129
+2026-11-20 18:08:54,032 INFO job poll from 223.73.242.129
+2026-11-20 18:08:55,311 INFO job poll from 223.73.242.129
+2026-11-20 18:08:57,155 INFO job poll from 223.73.242.129
+2026-11-20 18:08:58,686 INFO job poll from 223.73.242.129
+2026-11-20 18:08:59,872 INFO job poll from 223.73.242.129
+2026-11-20 18:09:03,245 INFO job poll from 223.73.242.129
+2026-11-20 18:09:04,536 INFO job poll from 223.73.242.129
+2026-11-20 18:09:07,237 INFO job poll from 223.73.242.129
+2026-11-20 18:09:08,525 INFO job poll from 223.73.242.129
+2026-11-20 18:09:10,289 INFO job poll from 223.73.242.129
+2026-11-20 18:09:11,617 INFO job poll from 223.73.242.129
+2026-11-20 18:09:13,691 INFO job poll from 223.73.242.129
+2026-11-20 18:09:14,941 INFO job poll from 223.73.242.129
+2026-11-20 18:09:18,918 INFO job poll from 223.73.242.129
+2026-11-20 18:09:20,146 INFO job poll from 223.73.242.129
+2026-11-20 18:09:22,648 INFO job poll from 223.73.242.129
+2026-11-20 18:09:24,497 INFO job poll from 223.73.242.129
+2026-11-20 18:09:28,795 INFO job poll from 223.73.242.129
+2026-11-20 18:09:30,897 INFO job poll from 223.73.242.129
+2026-11-20 18:09:34,928 INFO job poll from 223.73.242.129
+2026-11-20 18:09:38,922 INFO job poll from 223.73.242.129
+2026-11-20 18:09:43,548 INFO job poll from 223.73.242.129
+2026-11-20 18:09:45,378 INFO job poll from 223.73.242.129
+2026-11-20 18:09:47,230 INFO job poll from 223.73.242.129
+2026-11-20 18:09:50,913 INFO job poll from 223.73.242.129
+2026-11-20 18:09:55,527 INFO job poll from 223.73.242.129
+2026-11-20 18:09:58,285 INFO job poll from 223.73.242.129
+2026-11-20 18:09:59,161 INFO job poll from 223.73.242.129
+2026-11-20 18:10:00,446 INFO job poll from 223.73.242.129
+2026-11-20 18:10:02,280 INFO job poll from 223.73.242.129
+2026-11-20 18:10:08,382 INFO job poll from 223.73.242.129
+2026-11-20 18:10:09,610 INFO job poll from 223.73.242.129
+2026-11-20 18:10:11,168 INFO job poll from 223.73.242.129
+2026-11-20 18:10:12,987 INFO job poll from 223.73.242.129
+2026-11-20 18:10:13,910 INFO job poll from 223.73.242.129
+2026-11-20 18:10:15,920 INFO job poll from 223.73.242.129
+2026-11-20 18:10:17,349 INFO job poll from 223.73.242.129
+2026-11-20 18:10:19,786 INFO job poll from 223.73.242.129
+2026-11-20 18:10:22,195 INFO job poll from 223.73.242.129
+2026-11-20 18:10:25,579 INFO job poll from 223.73.242.129
+2026-11-20 18:10:27,113 INFO job poll from 223.73.242.129
+2026-11-20 18:10:28,348 INFO job poll from 223.73.242.129
+2026-11-20 18:10:29,574 INFO job poll from 223.73.242.129
+2026-11-20 18:10:32,047 INFO job poll from 223.73.242.129
+2026-11-20 18:10:33,616 INFO job poll from 223.73.242.129
+2026-11-20 18:10:35,459 INFO job poll from 223.73.242.129
+2026-11-20 18:10:36,678 INFO job poll from 223.73.242.129
+2026-11-20 18:10:37,910 INFO job poll from 223.73.242.129
+2026-11-20 18:10:41,317 INFO job poll from 223.73.242.129
+2026-11-20 18:10:42,780 INFO job poll from 223.73.242.129
+2026-11-20 18:10:44,010 INFO job poll from 223.73.242.129
+2026-11-20 18:10:45,291 INFO job poll from 223.73.242.129
+2026-11-20 18:10:49,851 INFO job poll from 223.73.242.129
+2026-11-20 18:10:51,082 INFO job poll from 223.73.242.129
+2026-11-20 18:10:53,221 INFO job poll from 223.73.242.129
+2026-11-20 18:10:56,652 INFO job poll from 223.73.242.129
+2026-11-20 18:10:58,500 INFO job poll from 223.73.242.129
+2026-11-20 18:10:59,988 INFO job poll from 223.73.242.129
+2026-11-20 18:11:01,222 INFO job poll from 223.73.242.129
+2026-11-20 18:11:02,421 INFO job poll from 223.73.242.129
+2026-11-20 18:11:03,677 INFO job poll from 223.73.242.129
+2026-11-20 18:11:04,907 INFO job poll from 223.73.242.129
+2026-11-20 18:11:06,133 INFO job poll from 223.73.242.129
+2026-11-20 18:11:07,425 INFO job poll from 223.73.242.129
+2026-11-20 18:11:11,992 INFO job poll from 223.73.242.129
+2026-11-20 18:11:16,577 INFO job poll from 223.73.242.129
+2026-11-20 18:11:17,870 INFO job poll from 223.73.242.129
+2026-11-20 18:11:19,099 INFO job poll from 223.73.242.129
+2026-11-20 18:11:23,421 INFO job poll from 223.73.242.129
+2026-11-20 18:11:44,564 INFO job poll from 223.73.242.129
+2026-11-20 18:11:46,734 INFO job poll from 223.73.242.129
+2026-11-20 18:11:48,016 INFO job poll from 223.73.242.129
+2026-11-20 18:11:49,244 INFO job poll from 223.73.242.129
+2026-11-20 18:11:52,311 INFO job poll from 223.73.242.129
+2026-11-20 18:11:53,543 INFO job poll from 223.73.242.129
+2026-11-20 18:11:55,693 INFO job poll from 223.73.242.129
+2026-11-20 18:11:56,915 INFO job poll from 223.73.242.129
+2026-11-20 18:11:59,686 INFO job poll from 223.73.242.129
+2026-11-20 18:12:00,919 INFO job poll from 223.73.242.129
+2026-11-20 18:12:03,115 INFO job poll from 223.73.242.129
+2026-11-20 18:12:08,905 INFO utterance: 64000 bytes (2.0s) rms 4242
+2026-11-20 18:12:08,906 INFO Processing audio with duration 00:02.000
+2026-11-20 18:12:08,922 INFO VAD filter removed 00:02.000 of audio
+2026-11-20 18:12:08,932 INFO HEARD: <nothing>
+2026-11-20 18:12:11,032 INFO queued speech id=7 (114102 wav bytes): I could not make that out. Try again, closer to the micropho
+2026-11-20 18:12:12,352 INFO job poll from 223.73.242.129
+2026-11-20 18:12:13,796 INFO served audio 7 (114102 bytes)
+2026-11-20 18:12:25,469 INFO job poll from 223.73.242.129
+2026-11-20 18:12:26,720 INFO job poll from 223.73.242.129
+2026-11-20 18:12:27,995 INFO job poll from 223.73.242.129
+----------------------------------------
+Exception occurred during processing of request from ('223.73.242.129', 15516)
+Traceback (most recent call last):
+  File "/home/anindya/.hermes/tools/python-3.14.7+20260901-linux-x64/lib/python3.14/socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anindya/.hermes/tools/python-3.14.7+20260901-linux-x64/lib/python3.14/socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anindya/.hermes/tools/python-3.14.7+20260901-linux-x64/lib/python3.14/socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "/home/anindya/.hermes/tools/python-3.14.7+20260901-linux-x64/lib/python3.14/http/server.py", line 502, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/anindya/.hermes/tools/python-3.14.7+20260901-linux-x64/lib/python3.14/http/server.py", line 468, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+                           ~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/home/anindya/.hermes/tools/python-3.14.7+20260901-linux-x64/lib/python3.14/socket.py", line 729, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+2026-11-20 18:12:39,078 INFO job poll from 223.73.242.129
+2026-11-20 18:12:40,485 INFO job poll from 223.73.242.129
+2026-11-20 18:12:41,978 INFO job poll from 223.73.242.129
+2026-11-20 18:12:43,220 INFO job poll from 223.73.242.129
+2026-11-20 18:12:47,247 INFO job poll from 223.73.242.129
+2026-11-20 18:12:49,089 INFO job poll from 223.73.242.129
+2026-11-20 18:12:54,007 INFO job poll from 223.73.242.129
+2026-11-20 18:12:55,852 INFO job poll from 223.73.242.129
+2026-11-20 18:12:58,874 INFO job poll from 223.73.242.129
+2026-11-20 18:13:02,273 INFO job poll from 223.73.242.129
+2026-11-20 18:13:04,713 INFO job poll from 223.73.242.129
+2026-11-20 18:13:05,943 INFO job poll from 223.73.242.129
+2026-11-20 18:13:07,218 INFO job poll from 223.73.242.129
+2026-11-20 18:13:08,466 INFO job poll from 223.73.242.129
+2026-11-20 18:13:09,981 INFO job poll from 223.73.242.129
+2026-11-20 18:13:11,541 INFO job poll from 223.73.242.129
+2026-11-20 18:13:13,598 INFO job poll from 223.73.242.129
+2026-11-20 18:13:16,129 INFO job poll from 223.73.242.129
+2026-11-20 18:13:19,457 INFO job poll from 223.73.242.129
+2026-11-20 18:13:21,301 INFO job poll from 223.73.242.129
+2026-11-20 18:13:22,580 INFO job poll from 223.73.242.129
+2026-11-20 18:13:24,675 INFO job poll from 223.73.242.129
+2026-11-20 18:13:25,928 INFO job poll from 223.73.242.129
+2026-11-20 18:13:27,133 INFO job poll from 223.73.242.129
+2026-11-20 18:13:28,367 INFO job poll from 223.73.242.129
+2026-11-20 18:13:29,599 INFO job poll from 223.73.242.129
+2026-11-20 18:13:30,822 INFO job poll from 223.73.242.129
+2026-11-20 18:13:32,054 INFO job poll from 223.73.242.129
+2026-11-20 18:13:35,430 INFO job poll from 223.73.242.129
+2026-11-20 18:13:37,929 INFO job poll from 223.73.242.129
+2026-11-20 18:13:39,757 INFO job poll from 223.73.242.129
+2026-11-20 18:13:41,290 INFO job poll from 223.73.242.129
+2026-11-20 18:13:43,113 INFO job poll from 223.73.242.129
+2026-11-20 18:13:44,349 INFO job poll from 223.73.242.129
+2026-11-20 18:13:45,932 INFO job poll from 223.73.242.129
+2026-11-20 18:13:47,150 INFO job poll from 223.73.242.129
+2026-11-20 18:13:52,367 INFO job poll from 223.73.242.129
+2026-11-20 18:13:54,826 INFO job poll from 223.73.242.129
+2026-11-20 18:13:56,082 INFO job poll from 223.73.242.129
+2026-11-20 18:13:57,907 INFO job poll from 223.73.242.129
+2026-11-20 18:13:59,751 INFO job poll from 223.73.242.129
+2026-11-20 18:14:01,591 INFO job poll from 223.73.242.129
+2026-11-20 18:14:03,078 INFO job poll from 223.73.242.129
+2026-11-20 18:14:05,536 INFO job poll from 223.73.242.129
+2026-11-20 18:14:08,915 INFO job poll from 223.73.242.129
+2026-11-20 18:14:10,147 INFO job poll from 223.73.242.129
+2026-11-20 18:14:11,402 INFO job poll from 223.73.242.129
+2026-11-20 18:14:13,271 INFO job poll from 223.73.242.129
+2026-11-20 18:14:15,112 INFO job poll from 223.73.242.129
+2026-11-20 18:14:18,171 INFO job poll from 223.73.242.129
+2026-11-20 18:14:19,338 INFO job poll from 223.73.242.129
+2026-11-20 18:14:20,871 INFO job poll from 223.73.242.129
+2026-11-20 18:14:23,945 INFO job poll from 223.73.242.129
+2026-11-20 18:14:27,345 INFO job poll from 223.73.242.129
+2026-11-20 18:14:29,727 INFO job poll from 223.73.242.129
+2026-11-20 18:14:32,318 INFO job poll from 223.73.242.129
+2026-11-20 18:14:34,154 INFO job poll from 223.73.242.129
+2026-11-20 18:14:39,024 INFO job poll from 223.73.242.129
+2026-11-20 18:14:41,505 INFO job poll from 223.73.242.129
+2026-11-20 18:14:43,017 INFO job poll from 223.73.242.129
+2026-11-20 18:14:45,447 INFO job poll from 223.73.242.129
+2026-11-20 18:14:47,671 INFO job poll from 223.73.242.129
+2026-11-20 18:14:49,203 INFO job poll from 223.73.242.129
+2026-11-20 18:14:50,386 INFO job poll from 223.73.242.129
+2026-11-20 18:14:51,615 INFO job poll from 223.73.242.129
+2026-11-20 18:14:54,997 INFO job poll from 223.73.242.129
+2026-11-20 18:14:56,225 INFO job poll from 223.73.242.129
+2026-11-20 18:14:57,459 INFO job poll from 223.73.242.129
+2026-11-20 18:14:58,733 INFO job poll from 223.73.242.129
+2026-11-20 18:15:01,753 INFO job poll from 223.73.242.129
+2026-11-20 18:15:03,664 INFO job poll from 223.73.242.129
+2026-11-20 18:15:06,462 INFO job poll from 223.73.242.129
+2026-11-20 18:15:13,761 INFO job poll from 223.73.242.129
+2026-11-20 18:15:16,500 INFO job poll from 223.73.242.129
+2026-11-20 18:15:18,652 INFO job poll from 223.73.242.129
+2026-11-20 18:15:21,108 INFO job poll from 223.73.242.129
+2026-11-20 18:15:22,393 INFO job poll from 223.73.242.129
+2026-11-20 18:15:24,932 INFO job poll from 223.73.242.129
+2026-11-20 18:15:28,839 INFO job poll from 223.73.242.129
+2026-11-20 18:15:30,074 INFO job poll from 223.73.242.129
+2026-11-20 18:15:31,905 INFO job poll from 223.73.242.129
+2026-11-20 18:15:33,788 INFO job poll from 223.73.242.129
+2026-11-20 18:15:35,216 INFO job poll from 223.73.242.129
+2026-11-20 18:15:37,059 INFO job poll from 223.73.242.129
+2026-11-20 18:15:38,316 INFO job poll from 223.73.242.129
+2026-11-20 18:15:41,405 INFO job poll from 223.73.242.129
+2026-11-20 18:15:45,997 INFO job poll from 223.73.242.129
+2026-11-20 18:15:47,225 INFO job poll from 223.73.242.129
+2026-11-20 18:15:48,468 INFO job poll from 223.73.242.129
+2026-11-20 18:15:50,600 INFO job poll from 223.73.242.129
+2026-11-20 18:15:52,183 INFO job poll from 223.73.242.129
+2026-11-20 18:15:55,567 INFO job poll from 223.73.242.129
+2026-11-20 18:15:56,794 INFO job poll from 223.73.242.129
+2026-11-20 18:16:00,738 INFO job poll from 223.73.242.129
+2026-11-20 18:16:02,098 INFO job poll from 223.73.242.129
+2026-11-20 18:16:03,212 INFO job poll from 223.73.242.129
+2026-11-20 18:16:04,428 INFO job poll from 223.73.242.129
+2026-11-20 18:16:06,581 INFO job poll from 223.73.242.129
+2026-11-20 18:16:08,469 INFO job poll from 223.73.242.129
+2026-11-20 18:16:10,352 INFO job poll from 223.73.242.129
+2026-11-20 18:16:12,164 INFO job poll from 223.73.242.129
+2026-11-20 18:16:15,837 INFO job poll from 223.73.242.129
+2026-11-20 18:16:18,294 INFO job poll from 223.73.242.129
+2026-11-20 18:16:19,837 INFO job poll from 223.73.242.129
+2026-11-20 18:16:22,910 INFO job poll from 223.73.242.129
+2026-11-20 18:16:24,831 INFO job poll from 223.73.242.129
+2026-11-20 18:16:27,521 INFO job poll from 223.73.242.129
+2026-11-20 18:16:30,843 INFO job poll from 223.73.242.129
+2026-11-20 18:16:32,137 INFO job poll from 223.73.242.129
+2026-11-20 18:16:35,193 INFO job poll from 223.73.242.129
+2026-11-20 18:16:37,908 INFO job poll from 223.73.242.129
+2026-11-20 18:16:39,152 INFO job poll from 223.73.242.129
+2026-11-20 18:16:40,442 INFO job poll from 223.73.242.129
+2026-11-20 18:16:42,236 INFO job poll from 223.73.242.129
+2026-11-20 18:16:43,453 INFO job poll from 223.73.242.129
+2026-11-20 18:16:46,867 INFO job poll from 223.73.242.129
+2026-11-20 18:16:48,409 INFO job poll from 223.73.242.129
+2026-11-20 18:16:51,172 INFO job poll from 223.73.242.129
+2026-11-20 18:16:52,049 INFO job poll from 223.73.242.129
+2026-11-20 18:16:53,624 INFO job poll from 223.73.242.129
+2026-11-20 18:16:55,463 INFO job poll from 223.73.242.129
+2026-11-20 18:16:58,537 INFO job poll from 223.73.242.129
+2026-11-20 18:17:02,030 INFO job poll from 223.73.242.129
+2026-11-20 18:17:04,945 INFO job poll from 223.73.242.129
+2026-11-20 18:17:06,171 INFO job poll from 223.73.242.129
+2026-11-20 18:17:08,702 INFO job poll from 223.73.242.129
+2026-11-20 18:17:11,899 INFO job poll from 223.73.242.129
+2026-11-20 18:17:14,782 INFO job poll from 223.73.242.129
+2026-11-20 18:17:18,155 INFO job poll from 223.73.242.129
+2026-11-20 18:17:20,648 INFO job poll from 223.73.242.129
+2026-11-20 18:17:22,200 INFO job poll from 223.73.242.129
+2026-11-20 18:17:26,186 INFO job poll from 223.73.242.129
+2026-11-20 18:17:27,407 INFO job poll from 223.73.242.129
+2026-11-20 18:17:28,886 INFO job poll from 223.73.242.129
+2026-11-20 18:17:30,968 INFO job poll from 223.73.242.129
+2026-11-20 18:17:34,436 INFO job poll from 223.73.242.129
+2026-11-20 18:17:38,119 INFO job poll from 223.73.242.129
+2026-11-20 18:17:39,513 INFO job poll from 223.73.242.129
+2026-11-20 18:17:40,926 INFO job poll from 223.73.242.129
+2026-11-20 18:17:43,967 INFO job poll from 223.73.242.129
+2026-11-20 18:17:45,502 INFO job poll from 223.73.242.129
+2026-11-20 18:17:46,778 INFO job poll from 223.73.242.129
+2026-11-20 18:17:50,146 INFO job poll from 223.73.242.129
+2026-11-20 18:17:51,388 INFO job poll from 223.73.242.129
+2026-11-20 18:17:52,875 INFO job poll from 223.73.242.129
+2026-11-20 18:17:54,096 INFO job poll from 223.73.242.129
+2026-11-20 18:17:55,304 INFO job poll from 223.73.242.129
+2026-11-20 18:17:58,371 INFO job poll from 223.73.242.129
+2026-11-20 18:17:59,912 INFO job poll from 223.73.242.129
+2026-11-20 18:18:00,859 INFO job poll from 223.73.242.129
+2026-11-20 18:18:05,213 INFO job poll from 223.73.242.129
+2026-11-20 18:18:06,711 INFO job poll from 223.73.242.129
+2026-11-20 18:18:08,041 INFO job poll from 223.73.242.129
+2026-11-20 18:18:10,690 INFO job poll from 223.73.242.129
+2026-11-20 18:18:11,911 INFO job poll from 223.73.242.129
+2026-11-20 18:18:13,194 INFO job poll from 223.73.242.129
+2026-11-20 18:18:14,733 INFO job poll from 223.73.242.129
+2026-11-20 18:18:16,207 INFO job poll from 223.73.242.129
+2026-11-20 18:18:18,345 INFO job poll from 223.73.242.129
+2026-11-20 18:18:21,743 INFO job poll from 223.73.242.129
+2026-11-20 18:18:24,200 INFO job poll from 223.73.242.129
+2026-11-20 18:18:26,657 INFO job poll from 223.73.242.129
+2026-11-20 18:18:27,951 INFO job poll from 223.73.242.129
+----------------------------------------
+Exception occurred during processing of request from ('223.73.242.129', 15497)
+Traceback (most recent call last):
+  File "/home/anindya/.hermes/tools/python-3.14.7+20260901-linux-x64/lib/python3.14/socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anindya/.hermes/tools/python-3.14.7+20260901-linux-x64/lib/python3.14/socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anindya/.hermes/tools/python-3.14.7+20260901-linux-x64/lib/python3.14/socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "/home/anindya/.hermes/tools/python-3.14.7+20260901-linux-x64/lib/python3.14/http/server.py", line 500, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/anindya/.hermes/tools/python-3.14.7+20260901-linux-x64/lib/python3.14/http/server.py", line 488, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "/home/anindya/xiaozhi-root/server_http.py", line 169, in do_POST
+    pcm = self.rfile.read(length) if length else b""
+          ~~~~~~~~~~~~~~~^^^^^^^^
+  File "/home/anindya/.hermes/tools/python-3.14.7+20260901-linux-x64/lib/python3.14/socket.py", line 729, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+2026-11-20 18:18:32,845 INFO job poll from 223.73.242.129
+2026-11-20 18:18:37,116 INFO job poll from 223.73.242.129
+2026-11-20 18:18:38,376 INFO job poll from 223.73.242.129
+2026-11-20 18:18:40,220 INFO job poll from 223.73.242.129
+2026-11-20 18:18:43,302 INFO job poll from 223.73.242.129
+2026-11-20 18:18:44,782 INFO job poll from 223.73.242.129
+2026-11-20 18:18:46,023 INFO job poll from 223.73.242.129
+2026-11-20 18:18:47,836 INFO job poll from 223.73.242.129
+2026-11-20 18:18:49,064 INFO job poll from 223.73.242.129
+2026-11-20 18:18:52,440 INFO job poll from 223.73.242.129
+2026-11-20 18:18:53,736 INFO job poll from 223.73.242.129
+2026-11-20 18:18:55,851 INFO job poll from 223.73.242.129
+2026-11-20 18:18:57,078 INFO job poll from 223.73.242.129
+2026-11-20 18:18:58,354 INFO job poll from 223.73.242.129
+2026-11-20 18:19:01,110 INFO job poll from 223.73.242.129
+2026-11-20 18:19:03,525 INFO job poll from 223.73.242.129
+2026-11-20 18:19:04,752 INFO job poll from 223.73.242.129
+2026-11-20 18:19:07,824 INFO job poll from 223.73.242.129
+2026-11-20 18:19:09,059 INFO job poll from 223.73.242.129
+2026-11-20 18:19:11,847 INFO job poll from 223.73.242.129
+2026-11-20 18:19:13,989 INFO job poll from 223.73.242.129
+2026-11-20 18:19:15,207 INFO job poll from 223.73.242.129
+2026-11-20 18:19:16,472 INFO job poll from 223.73.242.129
+2026-11-20 18:19:17,634 INFO job poll from 223.73.242.129
+2026-11-20 18:19:18,862 INFO job poll from 223.73.242.129
+2026-11-20 18:19:20,403 INFO job poll from 223.73.242.129
+2026-11-20 18:19:23,805 INFO job poll from 223.73.242.129
+2026-11-20 18:19:25,960 INFO job poll from 223.73.242.129
+2026-11-20 18:19:27,184 INFO job poll from 223.73.242.129
+2026-11-20 18:19:28,459 INFO job poll from 223.73.242.129
+2026-11-20 18:19:29,680 INFO job poll from 223.73.242.129
+2026-11-20 18:19:31,210 INFO job poll from 223.73.242.129
+2026-11-20 18:19:32,448 INFO job poll from 223.73.242.129
+2026-11-20 18:19:33,677 INFO job poll from 223.73.242.129
+2026-11-20 18:19:35,238 INFO job poll from 223.73.242.129
+2026-11-20 18:19:36,751 INFO job poll from 223.73.242.129
+2026-11-20 18:19:40,432 INFO job poll from 223.73.242.129
+2026-11-20 18:19:42,282 INFO job poll from 223.73.242.129
+2026-11-20 18:19:44,689 INFO job poll from 223.73.242.129
+2026-11-20 18:19:45,917 INFO job poll from 223.73.242.129
+2026-11-20 18:19:47,150 INFO job poll from 223.73.242.129
+2026-11-20 18:19:48,729 INFO job poll from 223.73.242.129
+2026-11-20 18:19:49,966 INFO job poll from 223.73.242.129
+/home/anindya/.hermes/tools/python-3.14.7+20260901-linux-x64/lib/python3.14/multiprocessing/resource_tracker.py:475: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown: {'/mp-6y0po3io'}
+  warnings.warn(
+2026-11-20 18:19:51,837 INFO root-http listening on :8100
+2026-11-20 18:19:52,417 INFO job poll from 223.73.242.129
+2026-11-20 18:19:57,634 INFO job poll from 223.73.242.129
+2026-11-20 18:20:02,251 INFO job poll from 223.73.242.129
+2026-11-20 18:20:04,183 INFO job poll from 223.73.242.129
+2026-11-20 18:20:06,850 INFO job poll from 223.73.242.129
+2026-11-20 18:20:08,348 INFO job poll from 223.73.242.129
+2026-11-20 18:20:09,645 INFO job poll from 223.73.242.129
+2026-11-20 18:20:10,638 INFO queued speech id=1 (56516 wav bytes): Recovered after a server restart.
+2026-11-20 18:20:13,268 INFO job poll from 223.73.242.129
+2026-11-20 18:20:14,496 INFO served audio 1 (56516 bytes)
+2026-11-20 18:20:23,403 INFO job poll from 223.73.242.129
+2026-11-20 18:20:25,551 INFO job poll from 223.73.242.129
+2026-11-20 18:20:28,621 INFO job poll from 223.73.242.129
+2026-11-20 18:20:29,910 INFO job poll from 223.73.242.129
+2026-11-20 18:20:31,741 INFO job poll from 223.73.242.129
+2026-11-20 18:20:33,266 INFO job poll from 223.73.242.129
+2026-11-20 18:20:35,661 INFO job poll from 223.73.242.129
+2026-11-20 18:20:39,664 INFO job poll from 223.73.242.129
+2026-11-20 18:20:40,882 INFO job poll from 223.73.242.129
+2026-11-20 18:20:44,266 INFO job poll from 223.73.242.129
+2026-11-20 18:20:45,521 INFO job poll from 223.73.242.129
+2026-11-20 18:20:46,753 INFO job poll from 223.73.242.129
+2026-11-20 18:20:48,042 INFO job poll from 223.73.242.129
+2026-11-20 18:20:49,878 INFO job poll from 223.73.242.129
+2026-11-20 18:20:51,358 INFO job poll from 223.73.242.129
+2026-11-20 18:20:52,583 INFO job poll from 223.73.242.129
+2026-11-20 18:20:53,821 INFO job poll from 223.73.242.129
+2026-11-20 18:20:56,243 INFO job poll from 223.73.242.129
+2026-11-20 18:20:59,705 INFO job poll from 223.73.242.129
+2026-11-20 18:21:01,534 INFO job poll from 223.73.242.129
+2026-11-20 18:21:03,947 INFO job poll from 223.73.242.129
+2026-11-20 18:21:05,180 INFO job poll from 223.73.242.129
+2026-11-20 18:21:10,399 INFO job poll from 223.73.242.129
+2026-11-20 18:21:11,997 INFO job poll from 223.73.242.129
+2026-11-20 18:21:15,669 INFO job poll from 223.73.242.129
+2026-11-20 18:21:17,160 INFO job poll from 223.73.242.129
+2026-11-20 18:21:18,439 INFO job poll from 223.73.242.129
+2026-11-20 18:21:20,234 INFO job poll from 223.73.242.129
+2026-11-20 18:21:21,505 INFO job poll from 223.73.242.129
+2026-11-20 18:21:23,357 INFO job poll from 223.73.242.129
+2026-11-20 18:21:25,184 INFO job poll from 223.73.242.129
+2026-11-20 18:21:27,038 INFO job poll from 223.73.242.129
+2026-11-20 18:21:30,676 INFO job poll from 223.73.242.129
+2026-11-20 18:21:31,945 INFO job poll from 223.73.242.129
+2026-11-20 18:21:34,668 INFO job poll from 223.73.242.129
+2026-11-20 18:21:35,954 INFO job poll from 223.73.242.129
+2026-11-20 18:21:37,440 INFO job poll from 223.73.242.129
+2026-11-20 18:21:39,021 INFO job poll from 223.73.242.129
+2026-11-20 18:21:41,734 INFO job poll from 223.73.242.129
+2026-11-20 18:21:46,038 INFO job poll from 223.73.242.129
+2026-11-20 18:21:47,268 INFO job poll from 223.73.242.129
+2026-11-20 18:21:48,501 INFO job poll from 223.73.242.129
+2026-11-20 18:21:50,341 INFO job poll from 223.73.242.129
+2026-11-20 18:21:51,615 INFO job poll from 223.73.242.129
+2026-11-20 18:21:53,454 INFO job poll from 223.73.242.129
+2026-11-20 18:24:16,250 INFO queued speech id=2 (56888 wav bytes): Probe finished and I am back.
+2026-11-20 18:26:48,265 INFO job poll from 223.73.242.129
+2026-11-20 18:26:49,350 INFO served audio 2 (56888 bytes)
+2026-11-20 18:26:54,315 INFO job poll from 223.73.242.129
+2026-11-20 18:26:55,798 INFO job poll from 223.73.242.129
+2026-11-20 18:26:57,024 INFO job poll from 223.73.242.129
+2026-11-20 18:26:59,229 INFO job poll from 223.73.242.129
+2026-11-20 18:27:01,999 INFO job poll from 223.73.242.129
+2026-11-20 18:27:03,514 INFO job poll from 223.73.242.129
+2026-11-20 18:27:04,999 INFO job poll from 223.73.242.129
+2026-11-20 18:27:06,244 INFO job poll from 223.73.242.129
+2026-11-20 18:27:07,471 INFO job poll from 223.73.242.129
+2026-11-20 18:27:09,937 INFO job poll from 223.73.242.129
+2026-11-20 18:27:11,206 INFO job poll from 223.73.242.129
+2026-11-20 18:27:13,090 INFO job poll from 223.73.242.129
+2026-11-20 18:27:14,579 INFO job poll from 223.73.242.129
+2026-11-20 18:27:16,732 INFO job poll from 223.73.242.129
+2026-11-20 18:27:18,578 INFO job poll from 223.73.242.129
+2026-11-20 18:27:21,296 INFO job poll from 223.73.242.129
+2026-11-20 18:27:22,526 INFO job poll from 223.73.242.129
+----------------------------------------
+Exception occurred during processing of request from ('223.73.242.129', 15413)
+Traceback (most recent call last):
+  File "/home/anindya/.hermes/tools/python-3.14.7+20260901-linux-x64/lib/python3.14/socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anindya/.hermes/tools/python-3.14.7+20260901-linux-x64/lib/python3.14/socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anindya/.hermes/tools/python-3.14.7+20260901-linux-x64/lib/python3.14/socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "/home/anindya/.hermes/tools/python-3.14.7+20260901-linux-x64/lib/python3.14/http/server.py", line 502, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/anindya/.hermes/tools/python-3.14.7+20260901-linux-x64/lib/python3.14/http/server.py", line 468, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+                           ~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/home/anindya/.hermes/tools/python-3.14.7+20260901-linux-x64/lib/python3.14/socket.py", line 729, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+2026-11-20 18:27:24,676 INFO job poll from 223.73.242.129
+2026-11-20 18:27:25,902 INFO job poll from 223.73.242.129
+2026-11-20 18:27:28,358 INFO job poll from 223.73.242.129
+2026-11-20 18:27:29,594 INFO job poll from 223.73.242.129
+2026-11-20 18:27:30,889 INFO job poll from 223.73.242.129
+2026-11-20 18:27:32,359 INFO job poll from 223.73.242.129
+2026-11-20 18:27:33,596 INFO job poll from 223.73.242.129
+2026-11-20 18:27:36,088 INFO job poll from 223.73.242.129
+2026-11-20 18:27:38,177 INFO job poll from 223.73.242.129
+2026-11-20 18:27:39,405 INFO job poll from 223.73.242.129
+2026-11-20 18:27:40,651 INFO job poll from 223.73.242.129
+2026-11-20 18:27:44,068 INFO job poll from 223.73.242.129
+2026-11-20 18:27:45,915 INFO job poll from 223.73.242.129
+2026-11-20 18:27:47,755 INFO job poll from 223.73.242.129
+2026-11-20 18:27:49,603 INFO job poll from 223.73.242.129
+2026-11-20 18:27:51,205 INFO job poll from 223.73.242.129
+2026-11-20 18:27:52,666 INFO job poll from 223.73.242.129
+2026-11-20 18:27:53,920 INFO job poll from 223.73.242.129
+2026-11-20 18:27:55,749 INFO job poll from 223.73.242.129
+2026-11-20 18:27:57,602 INFO job poll from 223.73.242.129
+2026-11-20 18:27:59,133 INFO job poll from 223.73.242.129
+2026-11-20 18:28:00,613 INFO job poll from 223.73.242.129
+2026-11-20 18:28:01,872 INFO job poll from 223.73.242.129
+2026-11-20 18:28:03,085 INFO job poll from 223.73.242.129
+2026-11-20 18:28:05,539 INFO job poll from 223.73.242.129
+2026-11-20 18:28:06,507 INFO job poll from 223.73.242.129
+2026-11-20 18:28:07,750 INFO job poll from 223.73.242.129
+2026-11-20 18:28:10,188 INFO job poll from 223.73.242.129
+2026-11-20 18:28:12,973 INFO job poll from 223.73.242.129
+2026-11-20 18:28:16,325 INFO job poll from 223.73.242.129
+2026-11-20 18:28:17,515 INFO job poll from 223.73.242.129
+2026-11-20 18:28:19,665 INFO job poll from 223.73.242.129
+2026-11-20 18:28:21,866 INFO job poll from 223.73.242.129
+2026-11-20 18:28:24,881 INFO job poll from 223.73.242.129
+2026-11-20 18:28:26,115 INFO job poll from 223.73.242.129
+2026-11-20 18:28:27,345 INFO job poll from 223.73.242.129
+2026-11-20 18:28:28,570 INFO job poll from 223.73.242.129
+2026-11-20 18:28:31,954 INFO job poll from 223.73.242.129
+2026-11-20 18:28:33,182 INFO job poll from 223.73.242.129
+2026-11-20 18:28:34,412 INFO job poll from 223.73.242.129
+2026-11-20 18:28:35,645 INFO job poll from 223.73.242.129
+2026-11-20 18:28:36,913 INFO job poll from 223.73.242.129
+2026-11-20 18:28:41,214 INFO job poll from 223.73.242.129
+2026-11-20 18:28:42,752 INFO job poll from 223.73.242.129
+2026-11-20 18:28:44,036 INFO job poll from 223.73.242.129
+2026-11-20 18:28:47,660 INFO job poll from 223.73.242.129
+2026-11-20 18:28:49,510 INFO job poll from 223.73.242.129
+2026-11-20 18:28:50,779 INFO job poll from 223.73.242.129
+2026-11-20 18:28:53,504 INFO job poll from 223.73.242.129
+2026-11-20 18:28:55,047 INFO job poll from 223.73.242.129
+2026-11-20 18:28:56,883 INFO job poll from 223.73.242.129
+2026-11-20 18:28:58,376 INFO job poll from 223.73.242.129
+2026-11-20 18:28:59,612 INFO job poll from 223.73.242.129
+2026-11-20 18:29:03,590 INFO job poll from 223.73.242.129
+2026-11-20 18:29:04,537 INFO job poll from 223.73.242.129
+2026-11-20 18:29:06,053 INFO job poll from 223.73.242.129
+2026-11-20 18:29:07,281 INFO job poll from 223.73.242.129
+2026-11-20 18:29:09,125 INFO job poll from 223.73.242.129
+2026-11-20 18:29:10,404 INFO job poll from 223.73.242.129
+2026-11-20 18:29:13,781 INFO job poll from 223.73.242.129
+2026-11-20 18:29:18,685 INFO job poll from 223.73.242.129
+2026-11-20 18:29:19,866 INFO job poll from 223.73.242.129
+2026-11-20 18:29:21,080 INFO job poll from 223.73.242.129
+2026-11-20 18:29:23,250 INFO job poll from 223.73.242.129
+2026-11-20 18:29:24,463 INFO job poll from 223.73.242.129
+2026-11-20 18:29:25,713 INFO job poll from 223.73.242.129
+2026-11-20 18:29:26,950 INFO job poll from 223.73.242.129
+2026-11-20 18:29:28,529 INFO job poll from 223.73.242.129
+2026-11-20 18:29:30,372 INFO job poll from 223.73.242.129
+2026-11-20 18:29:34,935 INFO job poll from 223.73.242.129
+2026-11-20 18:29:36,159 INFO job poll from 223.73.242.129
+2026-11-20 18:29:39,244 INFO job poll from 223.73.242.129
+2026-11-20 18:29:40,440 INFO job poll from 223.73.242.129
+2026-11-20 18:29:41,749 INFO job poll from 223.73.242.129
+2026-11-20 18:29:43,287 INFO job poll from 223.73.242.129
+2026-11-20 18:29:45,676 INFO job poll from 223.73.242.129
+2026-11-20 18:29:49,057 INFO job poll from 223.73.242.129
+2026-11-20 18:29:50,288 INFO job poll from 223.73.242.129
+2026-11-20 18:29:53,398 INFO job poll from 223.73.242.129
+2026-11-20 18:29:55,247 INFO job poll from 223.73.242.129
+2026-11-20 18:29:56,742 INFO job poll from 223.73.242.129
+2026-11-20 18:29:57,968 INFO job poll from 223.73.242.129
+2026-11-20 18:29:59,202 INFO job poll from 223.73.242.129
+2026-11-20 18:30:00,478 INFO job poll from 223.73.242.129
+2026-11-20 18:30:01,652 INFO job poll from 223.73.242.129
+2026-11-20 18:30:05,702 INFO job poll from 223.73.242.129
+2026-11-20 18:30:07,542 INFO job poll from 223.73.242.129
+2026-11-20 18:30:09,038 INFO job poll from 223.73.242.129
+2026-11-20 18:30:11,181 INFO job poll from 223.73.242.129
+2026-11-20 18:30:12,450 INFO job poll from 223.73.242.129
+2026-11-20 18:30:13,955 INFO job poll from 223.73.242.129
+2026-11-20 18:30:15,231 INFO job poll from 223.73.242.129
+2026-11-20 18:30:17,984 INFO job poll from 223.73.242.129
+2026-11-20 18:30:21,636 INFO job poll from 223.73.242.129
+2026-11-20 18:30:22,963 INFO job poll from 223.73.242.129
+2026-11-20 18:30:24,735 INFO job poll from 223.73.242.129
+2026-11-20 18:30:27,571 INFO job poll from 223.73.242.129
+2026-11-20 18:30:29,371 INFO job poll from 223.73.242.129
+2026-11-20 18:30:30,818 INFO job poll from 223.73.242.129
+2026-11-20 18:30:32,050 INFO job poll from 223.73.242.129
+2026-11-20 18:30:35,141 INFO job poll from 223.73.242.129
+2026-11-20 18:30:39,445 INFO job poll from 223.73.242.129
+2026-11-20 18:30:40,676 INFO job poll from 223.73.242.129
+2026-11-20 18:30:41,918 INFO job poll from 223.73.242.129
+2026-11-20 18:30:43,125 INFO job poll from 223.73.242.129
+2026-11-20 18:30:44,355 INFO job poll from 223.73.242.129
+2026-11-20 18:30:45,946 INFO job poll from 223.73.242.129
+2026-11-20 18:30:47,784 INFO job poll from 223.73.242.129
+2026-11-20 18:30:49,323 INFO job poll from 223.73.242.129
+2026-11-20 18:30:50,500 INFO job poll from 223.73.242.129
+2026-11-20 18:30:51,728 INFO job poll from 223.73.242.129
+2026-11-20 18:30:56,688 INFO job poll from 223.73.242.129
+2026-11-20 18:30:58,179 INFO job poll from 223.73.242.129
+2026-11-20 18:31:00,093 INFO job poll from 223.73.242.129
+2026-11-20 18:31:01,931 INFO job poll from 223.73.242.129
+2026-11-20 18:31:03,456 INFO job poll from 223.73.242.129
+2026-11-20 18:31:04,939 INFO job poll from 223.73.242.129
+2026-11-20 18:31:08,341 INFO job poll from 223.73.242.129
+2026-11-20 18:31:11,699 INFO job poll from 223.73.242.129
+2026-11-20 18:31:12,953 INFO job poll from 223.73.242.129
+2026-11-20 18:31:15,074 INFO job poll from 223.73.242.129
+2026-11-20 18:31:16,311 INFO job poll from 223.73.242.129
+2026-11-20 18:31:17,541 INFO job poll from 223.73.242.129
+2026-11-20 18:31:18,774 INFO job poll from 223.73.242.129
+2026-11-20 18:31:20,057 INFO job poll from 223.73.242.129
+2026-11-20 18:31:21,885 INFO job poll from 223.73.242.129
+2026-11-20 18:31:23,728 INFO job poll from 223.73.242.129
+2026-11-20 18:31:27,070 INFO job poll from 223.73.242.129
+2026-11-20 18:31:28,341 INFO job poll from 223.73.242.129
+2026-11-20 18:31:30,187 INFO job poll from 223.73.242.129
+2026-11-20 18:31:32,019 INFO job poll from 223.73.242.129
+2026-11-20 18:31:35,089 INFO job poll from 223.73.242.129
+2026-11-20 18:31:37,911 INFO job poll from 223.73.242.129
+2026-11-20 18:31:39,594 INFO job poll from 223.73.242.129
+2026-11-20 18:31:44,313 INFO job poll from 223.73.242.129
+2026-11-20 18:31:45,847 INFO job poll from 223.73.242.129
+2026-11-20 18:31:47,028 INFO job poll from 223.73.242.129
+2026-11-20 18:31:49,534 INFO job poll from 223.73.242.129
+2026-11-20 18:31:51,383 INFO job poll from 223.73.242.129
+2026-11-20 18:31:55,677 INFO job poll from 223.73.242.129
+2026-11-20 18:32:00,237 INFO job poll from 223.73.242.129
+2026-11-20 18:32:01,178 INFO job poll from 223.73.242.129
+2026-11-20 18:32:03,059 INFO job poll from 223.73.242.129
+2026-11-20 18:32:04,682 INFO job poll from 223.73.242.129
+2026-11-20 18:32:06,422 INFO job poll from 223.73.242.129
+2026-11-20 18:32:07,655 INFO job poll from 223.73.242.129
+2026-11-20 18:32:08,836 INFO job poll from 223.73.242.129
+2026-11-20 18:32:10,093 INFO job poll from 223.73.242.129
+2026-11-20 18:32:11,375 INFO job poll from 223.73.242.129
+2026-11-20 18:32:15,023 INFO job poll from 223.73.242.129
+2026-11-20 18:32:16,560 INFO job poll from 223.73.242.129
+2026-11-20 18:32:17,823 INFO job poll from 223.73.242.129
+2026-11-20 18:32:19,269 INFO job poll from 223.73.242.129
+2026-11-20 18:32:20,872 INFO job poll from 223.73.242.129
+2026-11-20 18:32:22,727 INFO job poll from 223.73.242.129
+2026-11-20 18:32:24,174 INFO job poll from 223.73.242.129
+2026-11-20 18:32:25,428 INFO job poll from 223.73.242.129
+2026-11-20 18:32:26,660 INFO job poll from 223.73.242.129
+2026-11-20 18:32:30,980 INFO job poll from 223.73.242.129
+2026-11-20 18:32:32,870 INFO queued speech id=3 (54658 wav bytes): Still here after five minutes.
+2026-11-20 18:32:34,401 INFO job poll from 223.73.242.129
+2026-11-20 18:32:35,876 INFO served audio 3 (54658 bytes)
+2026-11-20 18:32:42,656 INFO job poll from 223.73.242.129

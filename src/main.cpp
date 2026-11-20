@@ -22,6 +22,8 @@
 #include <Adafruit_GFX.h>
 #include <Adafruit_ST7789.h>
 #include <Adafruit_NeoPixel.h>
+#include <Preferences.h>
+#include <esp_task_wdt.h>
 
 #define MIC_WS    4
 #define MIC_SCK   5
@@ -93,6 +95,8 @@ static const DispPins DISP_CANDIDATES[] = {
   {40, 45, 41, 42, -1},   // group shifted down
   {21, 47, 45, 40, 42},   // swapped both
   {42, 41, 40, 45, -1},   // SDA/SCL reversed
+  {40, 45, 21, 47, -1},   // DC/CLK group shifted
+  {47, 21, 45, 40, 42},   // bread board, DC/RST swapped
 };
 static const int DISP_N = sizeof(DISP_CANDIDATES) / sizeof(DISP_CANDIDATES[0]);
 
@@ -114,7 +118,7 @@ void probeDisplay() {
     tft.setCursor(24, 150);
     tft.printf("%d/%d/%d", p.mosi, p.clk, p.dc);
     Serial.printf("probe: set %d (mosi %d clk %d dc %d rst %d)\n", i + 1, p.mosi, p.clk, p.dc, p.rst);
-    delay(3000);
+    for (int w = 0; w < 30; w++) { delay(100); esp_task_wdt_reset(); }
   }
   lcdSPI.end();
   lcdSPI.begin(21, -1, 47, -1);       // default for the running app
@@ -290,7 +294,6 @@ bool postUtterance(uint8_t *pcm, size_t len) {
 
 // ------------------------------------------------------------------ setup ----
 
-#include <esp_task_wdt.h>
 #define WDT_SECONDS 20
 
 void setup() {
@@ -306,8 +309,19 @@ void setup() {
   pinMode(LCD_BL, OUTPUT);
   digitalWrite(LCD_BL, HIGH);
   delay(50);
+  Preferences prefs;
+  prefs.begin("root", false);
+  bool probed = prefs.getBool("probed", false);
+  if (!probed) {
+    prefs.putBool("probed", true);     // set BEFORE probing: a crash must not loop
+  }
+  prefs.end();
+  if (!probed) {
+    Serial.println("one-shot: probing display pins");
+    probeDisplay();
+    esp_task_wdt_reset();
+  }
 #ifdef PROBE_DISPLAY
-  probeDisplay();
 #else
   lcdSPI.begin(21, -1, 47, -1);
   tft.init(240, 240, SPI_MODE0);
