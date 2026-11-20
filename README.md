@@ -1,61 +1,70 @@
 # ROOT terminal
 
-Firmware for an ESP32-S3-N16R8 voice terminal that talks to a server I own —
-not to a vendor cloud. The hardware is the "小智AI" / XiaoZhi bread board:
+ESP32-S3-N16R8 voice terminal that talks to a server I own, not a vendor cloud.
+Hardware: the "小智AI" bread board — INMP441 mic, MAX98357A amp, GMT130 240x240
+ST7789 panel, WS2812 status LED, BOOT button.
 
-| Part | Value |
-|---|---|
-| MCU | ESP32-S3-N16R8 (16 MB flash, 8 MB PSRAM) |
-| Mic | INMP441 I2S |
-| Amp | MAX98357A (I2S) |
-| Display | GMT130-V1.0, ST7789 240x240 IPS, 7-pin (no CS) |
-| Speaker | 4 Ω 3 W 3070 |
+## Architecture (v7/v8): HTTP only
 
-## Pin map
-
-Taken from the upstream board profile
-`78/xiaozhi-esp32 · main/boards/bread-compact-wifi-lcd/config.h`, then verified
-on real hardware — the mic and amp were proven with live levels and audible
-tones before anything else was written.
+Long-lived TCP kept deadlocking — writes blocked, reads never arrived, the loop
+froze and audio died. Every interaction is now a short HTTP request:
 
 ```
-MIC  WS 4   SCK 5   DIN 6
-SPK  DOUT 7 BCLK 15 LRCK 16
-LCD  MOSI 47 CLK 21 DC 40 RST 45 BL 42   CS: none (tied low)
+hold BOOT   -> mic buffers to PSRAM (mono PCM16 16 kHz)
+release     -> POST /utt  (raw PCM)
+idle loop   -> GET /job every 1.2 s; id > 0 then GET /a/<id>.wav and play it
 ```
 
-## Wire protocol
-
-Newline-delimited JSON over TCP, port 8099, then raw PCM:
-
-```
-device -> server   {"type":"hello","device":"xiaozhi-s3","v":2,"rssi":-41}
-server -> device   {"type":"welcome","text":"root here"}
-server -> device   {"type":"audio","bytes":4096,"rate":16000,"seq":7}
-                   <4096 bytes of PCM16 LE, 16 kHz mono>
-```
-
-Audio is sent in 4 KB frames, each announced before it is written. A single
-100 KB block made the board reset the connection mid-transfer; 4 KB frames
-stopped it. The device reads a whole frame, then hands it to I2S in one write —
-dribbling 256 bytes at a time throttled playback to a fifth of real time.
+The playback task owns I2S and drains a 64 KB PSRAM ring; the main loop only
+writes into the ring, so a slow speaker can never stall the network side.
 
 ## Server
 
-`bridge_voice.py` synthesises speech with piper (offline, local voice model),
-converts to 16 kHz mono PCM with ffmpeg, and streams it in paced frames.
+`server_http.py` on port 8100 (systemd unit `root-bridge`):
 
-## Status
+| Endpoint | Purpose |
+|---|---|
+| `GET /job` | `{"id":N}` next clip to speak, `0` when idle |
+| `GET /a/<id>.wav` | the clip, 16 kHz mono PCM16 in a WAV container |
+| `POST /utt` | raw PCM body, transcribed with faster-whisper, reply queued |
+| `GET /say?text=...` | queue speech (how Root talks to the device) |
+| `GET /status` | counters: jobs, fetches, utterances, last heard |
 
-- [x] custom firmware runs on the board
-- [x] mic and amp verified on hardware
-- [x] joy: link to server, speech out, smooth, whisper-quiet (1% gain)
-- [ ] display bring-up (pins wired, driver compiled, not yet confirmed on a lit panel)
-- [ ] Opus instead of raw PCM
-- [ ] voice in: mic -> server -> transcription
-- [ ] music playback
+Speech is synthesised locally with piper (`en_US-lessac-medium`), converted with
+ffmpeg. Volume is applied on the device at 1% — this sits in a bedroom.
 
-## Build / flash
+## Pin map
+
+From the upstream profile `78/xiaozhi-esp32`, verified on this unit:
+
+```
+MIC  WS 4   SCK 5   SD 6
+SPK  DOUT 7 BCLK 15 LRCK 16
+LED  48 (WS2812)     BUTTON 0
+```
+
+Display pins are **not yet confirmed**. The panel is a 7-pin GMT130 (GND VCC SCK
+SDA RES DC BLK — no CS). At boot the firmware draws `SET n` for three seconds per
+candidate set, since the audio pins match two different upstream boards:
+
+1. `41 / 42 / 40 / 45`  (zhengchen 1.54tft-wifi)
+2. `47 / 21 / 40 / 45`  (bread-compact-wifi-lcd)
+3. `10 / 9 / 8 / 18`    (nologo xingzhi-cube 1.54tft)
+4. `21 / 47 / 40 / 45`  (swapped MOSI/CLK)
+
+Whichever number appears on screen is the wiring; lock it in and delete the probe.
+
+## Lessons (learned the hard way)
+
+- A blocking I2S write inside the socket read loop kills the connection: the
+  device stops reading, the peer resets, audio is lost. Separate task, always.
+- `WiFiClient` stays unusable after a failed `connect()` until `stop()` is called.
+- Counting bytes you *asked* the mic for instead of bytes it *gave* corrupts the
+  upload silently.
+- Verify on the wire, not in the log: the server said "sent" while the board
+  received nothing.
+
+## Build
 
 ```
 pio run
@@ -63,6 +72,3 @@ esptool --chip esp32s3 --port COM4 --baud 460800 write_flash \
   --flash_mode dio --flash_freq 80m --flash_size 16MB \
   0x0 bootloader.bin 0x8000 partitions.bin 0x10000 firmware.bin
 ```
-
-Wi-Fi is provisioned by captive portal (`Root-ESP32-Setup`); credentials never
-leave the device.
