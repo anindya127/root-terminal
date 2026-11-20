@@ -89,6 +89,10 @@ static const DispPins DISP_CANDIDATES[] = {
   {47, 21, 40, 45, 42},   // bread-compact-wifi-lcd
   {10,  9,  8, 18, -1},   // nologo xingzhi-cube 1.54tft
   {21, 47, 40, 45, 42},   // swapped MOSI/CLK
+  {41, 42, 45, 40, -1},   // zhengchen with DC/RST swapped
+  {40, 45, 41, 42, -1},   // group shifted down
+  {21, 47, 45, 40, 42},   // swapped both
+  {42, 41, 40, 45, -1},   // SDA/SCL reversed
 };
 static const int DISP_N = sizeof(DISP_CANDIDATES) / sizeof(DISP_CANDIDATES[0]);
 
@@ -286,6 +290,9 @@ bool postUtterance(uint8_t *pcm, size_t len) {
 
 // ------------------------------------------------------------------ setup ----
 
+#include <esp_task_wdt.h>
+#define WDT_SECONDS 20
+
 void setup() {
   Serial.begin(115200);
   delay(400);
@@ -299,7 +306,13 @@ void setup() {
   pinMode(LCD_BL, OUTPUT);
   digitalWrite(LCD_BL, HIGH);
   delay(50);
+#ifdef PROBE_DISPLAY
   probeDisplay();
+#else
+  lcdSPI.begin(21, -1, 47, -1);
+  tft.init(240, 240, SPI_MODE0);
+  tft.setRotation(0);
+#endif
   tft.setSPISpeed(40000000);
   tft.setTextWrap(false);
   drawChrome("hold to talk");
@@ -319,6 +332,16 @@ void setup() {
   ArduinoOTA.setHostname(OTA_HOST);
   ArduinoOTA.setPassword("root-vps-ota");
   ArduinoOTA.begin();
+
+  esp_task_wdt_config_t wdt = {};
+  wdt.timeout_ms = WDT_SECONDS * 1000;
+  wdt.idle_core_mask = 0;
+  wdt.trigger_panic = true;
+  if (esp_task_wdt_init(&wdt) != ESP_OK) {
+    esp_task_wdt_reconfigure(&wdt);      // already initialised by the core
+  }
+  esp_task_wdt_add(NULL);
+  Serial.printf("watchdog: %d s\n", WDT_SECONDS);
 
   drawChrome("hold to talk");
 }
@@ -383,6 +406,18 @@ void loop() {
       }
     }
   }
+
+  if (Serial.available()) {
+    int ch = Serial.read();
+    if (ch == 't' || ch == 'T') {
+      Serial.println("selftest: posting a synthetic utterance");
+      static int16_t tone[32000];              // 2 s of 440 Hz
+      for (int i = 0; i < 32000; i++) tone[i] = (int16_t)(sinf(2.0f * PI * 440 * i / 16000.0f) * 6000);
+      postUtterance((uint8_t *)tone, sizeof(tone));
+    }
+  }
+
+  esp_task_wdt_reset();
 
   if (millis() - lastBeat > 15000) {
     lastBeat = millis();
